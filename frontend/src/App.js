@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar'
+
+import * as React from 'react';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is a test!
-        </p>
-        <a
-          className="App-link"
-          href="https://google.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Google
-        </a>
-      </header>
+      <div className="Header-container">
+        <header className="App-header">
+          <Navbar />
+        </header>
+      </div>
+
+      <div className="Body-container">
+        <div className="App-body">
+            <p> hello world 2 </p>
+        </div>
+      </div>
     </div>
   );
 }
+
 
 export default App;
