@@ -1,20 +1,17 @@
 import { useState } from "react";
 import Button from '@mui/material/Button';
+import img from '../logo-dark.png';
 
 const Navbar = () => {
     return (
         <nav className='navbar'>
             <div className='content-left'>
-                <a href='#' className='bar-logo'>
-                    FoititoKosmos
+                <a href='#' className='test'>
+                   test 
                 </a>
             </div>
             <div className='content-center'>
-                <ul className='bar-links'>
-                    <Button variant='text'>Page 1</Button>
-                    <Button variant='text'>Page 2</Button>
-                    <Button variant='text'>Page 3</Button>
-                </ul>
+                <img className='bar-logo' src={img} href='#' />
             </div>
             <div className='content-right'>
                 <Button className='bar-button' variant="outlined">Sign In</Button>
